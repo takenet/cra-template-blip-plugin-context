@@ -1,6 +1,6 @@
 {
-    "name": "cra-template-blip-plugin",
-    "version": "0.1.15",
+    "name": "cra-template-blip-plugin-context",
+    "version": "0.1.16",
     "keywords": [
         "blip",
         "plugin",
