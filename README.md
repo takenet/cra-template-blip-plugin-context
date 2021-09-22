@@ -1,4 +1,4 @@
-# BLiP plugin template api
+# BLiP plugin template context api
 
 [![NPM Version][npm-badge]][npm-url]
 [![Downloads][npm-downloads-badge]][npm-downloads-url]
