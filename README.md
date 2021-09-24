@@ -135,11 +135,11 @@ Now just add the plugin to your chatbot and enjoy!
 
 ## More information
 
-[Blip plugin template](https://github.com/axeldouglas/cra-template-blip-plugin/tree/main/template)
+[Blip plugin template](https://github.com/takenet/cra-template-blip-plugin/tree/main/template)
 
 [npm-badge]: https://img.shields.io/npm/v/cra-template-blip-plugin.svg
 [npm-url]: https://www.npmjs.com/package/cra-template-blip-plugin
 [npm-downloads-badge]: https://img.shields.io/npm/dt/cra-template-blip-plugin.svg
 [npm-downloads-url]: https://www.npmjs.com/package/cra-template-blip-plugin
-[license-badge]: https://img.shields.io/github/license/axeldouglas/cra-template-blip-plugin.svg
+[license-badge]: https://img.shields.io/github/license/takenet/cra-template-blip-plugin.svg
 [license-url]: https://opensource.org/licenses/MIT
