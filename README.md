@@ -8,6 +8,12 @@ BLiP plugin it's a technology-agnostic way to plug unnoficial features to enhanc
 
 This project aims to give the initial skill needed to develop and build your own plugins.
 
+## Other templates
+
+We have other templates available that you may want to to check:
+
+- [cra-template-blip-plugin][plugin-basic]
+
 ## File Structure
 
 Assuming your folder is called `blip-plugin-project`.
@@ -135,11 +141,13 @@ Now just add the plugin to your chatbot and enjoy!
 
 ## More information
 
-[Blip plugin template](https://github.com/takenet/cra-template-blip-plugin/tree/main/template)
+[Blip plugin template](https://github.com/takenet/cra-template-blip-plugin-context/tree/main/template)
 
-[npm-badge]: https://img.shields.io/npm/v/cra-template-blip-plugin.svg
-[npm-url]: https://www.npmjs.com/package/cra-template-blip-plugin
-[npm-downloads-badge]: https://img.shields.io/npm/dt/cra-template-blip-plugin.svg
-[npm-downloads-url]: https://www.npmjs.com/package/cra-template-blip-plugin
-[license-badge]: https://img.shields.io/github/license/takenet/cra-template-blip-plugin.svg
+[npm-badge]: https://img.shields.io/npm/v/cra-template-blip-plugin-context.svg
+[npm-url]: https://www.npmjs.com/package/cra-template-blip-plugin-context
+[npm-downloads-badge]: https://img.shields.io/npm/dt/cra-template-blip-plugin-context.svg
+[npm-downloads-url]: https://www.npmjs.com/package/cra-template-blip-plugin-context
+[license-badge]: https://img.shields.io/github/license/takenet/cra-template-blip-plugin-context.svg
 [license-url]: https://opensource.org/licenses/MIT
+[plugin-basic]: https://github.com/takenet/cra-template-blip-plugin
+
