@@ -102,11 +102,11 @@ Whatever name you choose will replace all occurrences of that string in the proj
 ## Usage
 
 ```bash
-npx create-react-app PROJECT_NAME --template blip-plugin
+npx create-react-app PROJECT_NAME --template blip-plugin-context
 
 #or
 
-yarn create-react-app PROJECT_NAME --template blip-plugin
+yarn create-react-app PROJECT_NAME --template blip-plugin-context
 ```
 
 > Note: `npx` command installs most recent stable version of CRA from npm. `--template` parameter points to this template, note that `cra-template-` prefix is omitted.
