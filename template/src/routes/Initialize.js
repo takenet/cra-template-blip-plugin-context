@@ -14,26 +14,23 @@ import * as ApplicationActions from '../store/actions/application';
 import * as CommonActions from '../store/actions/common';
 import * as UserActions from '../store/actions/user';
 
-import sleep from '../utils/sleep';
-
 const DEFAULT_LANGUAGE = 'pt';
-const DELAY_TIME = 600;
 
 const Initialize = ({ dispatch }) => {
     const { t } = useTranslation();
 
     useEffect(() => {
         // get application, user and language
-        getInitialInfo();
+        getInitialInfoAsync();
         // eslint-disable-next-line
     }, []);
 
-    const getInitialInfo = () => {
-        withLoadingAsync(async () => {
+    const getInitialInfoAsync = async () => {
+        await withLoadingAsync(async () => {
             await dispatch(ApplicationActions.getApplication());
             await dispatch(UserActions.getLoggedUser());
+            await dispatch(UserActions.getUserPermission());
             await getLanguageAsync();
-            await sleep(DELAY_TIME);
 
             showToast({
                 type: BlipPortalToastTypes.SUCCESS,

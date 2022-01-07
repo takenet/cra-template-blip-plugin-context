@@ -9,7 +9,7 @@ import settings from '../../../../config';
 import Card from '../../../../components/Card';
 import Header from '../Header';
 
-const StoredData = ({ appInfo, user, language, onClick }) => {
+const BlipData = ({ appInfo, user, language, onClick }) => {
     const { t } = useTranslation();
 
     const formatDate = (datetime) =>
@@ -152,7 +152,7 @@ const StoredData = ({ appInfo, user, language, onClick }) => {
     );
 };
 
-StoredData.propTypes = {
+BlipData.propTypes = {
     appInfo: PropTypes.object,
     user: PropTypes.object,
     language: PropTypes.string,
@@ -166,4 +166,4 @@ const mapStateToProps = (state, props) => ({
     ...props
 });
 
-export default ConnectTo(mapStateToProps)(StoredData);
+export default ConnectTo(mapStateToProps)(BlipData);

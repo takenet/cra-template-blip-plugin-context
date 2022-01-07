@@ -39,10 +39,10 @@ const Home = () => {
                     </Trans>
                 </p>
                 <h5 className="f5 b mt3 mb2">{t('title.exemples')}</h5>
-                <a
-                    className="f6 flex items-center blue no-underline underline-hover"
-                    href="#0"
+                <span
+                    className="f6 flex items-center blue no-underline underline-hover pointer"
                     data-testid="exemple-one"
+                    aria-hidden="true"
                     onClick={() =>
                         handleNavigation(RoutesPath.EXAMPLE_PAGE.PATH, {
                             type: 'storedData'
@@ -50,12 +50,12 @@ const Home = () => {
                     }
                 >
                     <bds-icon name="file-txt-1" size="x-small" />
-                    {t('link.storedExemple')}
-                </a>
-                <a
-                    className="f6 flex items-center blue no-underline underline-hover mt1"
-                    href="#0"
+                    {t('link.blipDataExample')}
+                </span>
+                <span
+                    className="f6 flex items-center blue no-underline underline-hover mt1 pointer"
                     data-testid="exemple-two"
+                    aria-hidden="true"
                     onClick={() =>
                         handleNavigation(RoutesPath.EXAMPLE_PAGE.PATH, {
                             type: 'swrCall'
@@ -64,7 +64,7 @@ const Home = () => {
                 >
                     <bds-icon name="file-txt-1" size="x-small" />
                     {t('link.swrExemple')}
-                </a>
+                </span>
             </div>
         </div>
     );

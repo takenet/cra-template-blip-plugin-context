@@ -67,8 +67,8 @@ describe('Home page', () => {
         expect(mockedOpen).toHaveBeenCalled();
         expect(mockedOpen).toHaveBeenCalledTimes(1);
         expect(mockedOpen).toHaveBeenCalledWith(
-            'https://github.com/axeldouglas/cra-template-blip-plugin',
-            'Blank'
+            'https://github.com/takenet/cra-template-blip-plugin-context',
+            '_blank'
         );
     });
 

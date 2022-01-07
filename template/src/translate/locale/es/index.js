@@ -4,12 +4,12 @@ import common from './common';
 import notifications from './notifications';
 
 const locale = {
-    es: {
-        translations: {
-            ...common,
-            ...notifications
-        }
-    }
+	es: {
+		translations: {
+			...common,
+			...notifications
+		}
+	}
 };
 
 export { locale };
