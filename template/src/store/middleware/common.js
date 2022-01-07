@@ -4,7 +4,7 @@ import { setLanguage } from '../actions/common';
 
 const getLanguageAsync = async (dispatch, { payload }) => {
     try {
-        const language = await getCurrentLanguageAsync();
+        const language = await getCurrentLanguageAsync(payload);
         if (!!language) {
             await dispatch(setLanguage(language));
         }

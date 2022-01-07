@@ -1,8 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
-import StoredData from './components/StoredData';
+import BlipData from './components/BlipData';
 import SwrFetchData from './components/SwrFetchData';
 
 const Example = () => {
@@ -24,14 +23,10 @@ const Example = () => {
     }, [history]);
 
     return example === 'storedData' ? (
-        <StoredData onClick={() => handleNavigation()} />
+        <BlipData onClick={() => handleNavigation()} />
     ) : (
         <SwrFetchData onClick={() => handleNavigation()} />
     );
-};
-
-Example.propTypes = {
-    dispatch: PropTypes.func
 };
 
 export default Example;

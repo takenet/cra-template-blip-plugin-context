@@ -4,7 +4,7 @@ import { setApplication } from '../actions/application';
 
 const getApplicationAsync = async (dispatch, { payload }) => {
     try {
-        const appData = await getApplicationDataAsync();
+        const appData = await getApplicationDataAsync(payload);
         if (!!appData) {
             await dispatch(setApplication(appData));
         }

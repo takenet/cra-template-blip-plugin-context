@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 import useCombinedReducers from '../hooks/useCombinedReducers';
 import { StoreContext } from '../hooks/store';
@@ -21,20 +21,21 @@ const Provider = ({ children }) => {
         }
     };
 
+    const props = useMemo(
+        () => ({
+            store,
+            dispatch: withMiddleware
+        }),
+        [store, withMiddleware]
+    );
+
     return (
-        <StoreContext.Provider
-            value={{
-                store,
-                dispatch: withMiddleware
-            }}
-        >
-            {children}
-        </StoreContext.Provider>
+        <StoreContext.Provider value={props}>{children}</StoreContext.Provider>
     );
 };
 
 Provider.propTypes = {
-    children: PropTypes.any
+    children: PropTypes.element
 };
 
 export default Provider;

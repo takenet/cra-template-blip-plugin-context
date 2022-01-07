@@ -4,7 +4,7 @@ import * as UserActions from '../actions/user';
 
 const getLoggedUserAsync = async (dispatch, { payload }) => {
     try {
-        const userData = await UserService.getLoggedUserAsync();
+        const userData = await UserService.getLoggedUserAsync(payload);
         if (!!userData) {
             await dispatch(UserActions.setLoggedUser(userData));
         }
@@ -15,9 +15,11 @@ const getLoggedUserAsync = async (dispatch, { payload }) => {
 
 const getUserPermissionAsync = async (dispatch, { payload }) => {
     try {
-        const permissionData = await UserService.getUserPermissionsAsync();
+        const permissionData = await UserService.userHasPermissionAsync(
+            payload
+        );
         if (!!permissionData) {
-            await dispatch(UserActions.setUserPermission(permissionData));
+            await dispatch(UserActions.setUserPermission('admin'));
         }
     } catch (error) {
         // display error message
